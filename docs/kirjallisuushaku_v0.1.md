@@ -1,4 +1,4 @@
-# 📚 Kirjallisuushaun suunnitelma (Taustatutkimus — päivä 3)
+# 📚 Kirjallisuushaun suunnitelma (Taustatutkimus)
 
 ---
 
@@ -39,9 +39,9 @@
 
 | Tehtävä | Henkilö |
 |----------|----------|
-| IMU-tarkkuus ja validointi | [Sinun nimi] |
-| Tekoäly ja liikkeiden luokittelu | [Sinun nimi] |
-| Polven linjauksen lääketieteellinen tausta | [Sinun nimi] |
+| IMU-tarkkuus ja validointi | **Research Lead** |
+| Tekoäly ja liikkeiden luokittelu | **AI / Data Specialist** |
+| Polven linjauksen lääketieteellinen tausta |  **Medical Research Advisor** |
 
 ---
 

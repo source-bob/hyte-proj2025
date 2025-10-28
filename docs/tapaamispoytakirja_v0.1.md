@@ -4,7 +4,7 @@
 
 | Päivä | Aika | Kesto | Paikka / Tapa |
 |--------|------|--------|----------------|
-| __Täytetään tapaamisen jälkeen__ | __Täytetään__ | n. 30–60 min | Kampus / Teams |
+| __Täytetään tapaamisen jälkeen__ | __Täytetään__ | n. 15 min | Kampus / Lähi |
 
 **Osallistujat:**  
 - [Etunimi Sukunimi] – opiskelija (projektin vastuuhenkilö)  
