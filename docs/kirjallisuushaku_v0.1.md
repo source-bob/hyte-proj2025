@@ -23,7 +23,7 @@
 
 ---
 
-## 🔍 Hakusanat (Search keywords)
+## 🔍 Hakumenetelmiä (Search method examples)
 
 | Pääteema | Hakulause / esimerkkihaku | Tietokanta |
 |-----------|----------------------------|-------------|
