@@ -71,10 +71,10 @@ Näin voidaan tukea kuntoutusta, urheilusuoritusten analyysiä ja nivelrikon var
 
 ## 5. Lähteet
 
-1. Brouwer G.M. et al. *Association between valgus and varus alignment and the development and progression of osteoarthritis of the knee.* Arthritis & Rheumatism, 56(4), 1204–1211, [2007](https://pubmed.ncbi.nlm.nih.gov)  
-2. Jordan M.J. et al. *Validity of an Inertial Measurement Unit System to Assess Lower-Limb Kinematics.* CEJSSM, [2021](https://www.mdpi.com)  
-3. *Knee Angle Estimation with Dynamic Calibration Using Inertial Sensors.* Sensors, [2024](https://www.mdpi.com)  
-4. *Validation of Inertial-Measurement-Unit-Based Ex Vivo Knee Joint Angle Estimation.* Sensors, [2024](https://www.research.ed.ac.uk)  
+1. Brouwer G.M. et al. *Association between valgus and varus alignment and the development and progression of osteoarthritis of the knee.* Arthritis & Rheumatism, 56(4), 1204–1211, [2007](https://pubmed.ncbi.nlm.nih.gov/17393449/)  
+2. Jordan M.J. et al. *Validity of an Inertial Measurement Unit System to Assess Lower-Limb Kinematics.* CEJSSM, [2021](https://www.pure.ed.ac.uk/ws/portalfiles/portal/216369254/JordanEtal2021CEJSSMValidityOfAnInertialMeasurementUnit.pdf)  
+3. *Knee Angle Estimation with Dynamic Calibration Using Inertial Sensors.* Sensors, [2024](https://www.mdpi.com/1424-8220/24/2/695?utm_source=chatgpt.com)  
+4. *Validation of Inertial-Measurement-Unit-Based Ex Vivo Knee Joint Angle Estimation.* Sensors, [2024](https://www.mdpi.com/1424-8220/24/11/3324?utm_source=chatgpt.com)  
 5. *IMU-Based Fitness Activity Recognition Using CNNs for Time Series Classification.* Sensors, [2024](https://www.mdpi.com/1424-8220/24/3/742?utm_source=chatgpt.com)
 
 ---
