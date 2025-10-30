@@ -1,3 +1,5 @@
+## nykyinen [sprinttiraportti_RyhmäA_s2025](https://docs.google.com/spreadsheets/d/1Lcqfv9uUJj410RH7PICg-WAVF7unhfjf/edit?gid=90830429#gid=90830429) Drive:ssa
+
 # 🧭 Taustatutkimus v0.9 – AI Motion Analyzer
 
 ## 1. Johdanto
