@@ -1,5 +1,126 @@
 ## nykyinen [sprinttiraportti_RyhmäA_s2025](https://docs.google.com/spreadsheets/d/1Lcqfv9uUJj410RH7PICg-WAVF7unhfjf/edit?gid=90830429#gid=90830429) Drive:ssa
 
+
+# 👥 Projektitiimi ja roolit – AIMA
+
+## Tiimin yleiskuvaus
+
+Tässä projektissa kehitetään MoveSense-anturiin perustuva AI-järjestelmä, joka tunnistaa polven liikkeet (kyykky, kävely, sivuttaissiirtymä).  
+Projekti kattaa laitteiston, ohjelmiston, tekoälyn ja käyttöliittymän kehityksen.  
+
+> Tämä dokumentti määrittelee vastuualueet ja työnjaon selkeyden vuoksi.
+
+---
+
+## Tiimin kokoonpano
+
+| Rooli | Nimi | Vastuualue |
+|-------|------|-------------|
+| **Team Lead** | - | Projektin johtaminen, aikataulutus, dokumentointi ja yhteys ohjaajiin |
+| **Tech Lead (AI & Data)** | - | Anturidatan käsittely, Python-analytiikka ja tekoälymallien integrointi |
+| **Hardware Lead (MoveSense & Prototyyppi)** | - | Anturin liittäminen, kiinnitysratkaisut, prototyypin fyysinen toteutus |
+| **Research Lead** | - | Kirjallisuuskatsaus, taustatutkimus ja tutkimuskysymysten määrittely |
+| **Protocol Owner** | - | Mittausprotokollan suunnittelu ja valvonta, testien toistettavuuden varmistaminen |
+| **Data Engineer** | - | Datan esikäsittely, suodatus, tallennus (CSV) ja tiedon eheys |
+| **ML Engineer** | - | AI-luokittelun toteutus, mallin koulutus ja validointi |
+| **UI/UX Designer** | - | Käyttöliittymän (Figma) ja visualisoinnin suunnittelu |
+| **QA & Validation Engineer** | - | Mittausprotokollan testaus, tulosten validointi ja virhemarginaalien arviointi |
+| **Presentation Lead** | - | Mid-review- ja loppuesitysten valmistelu, visuaaliset materiaalit ja viestintä |
+
+> *Huom:* Projektissa kaikki roolit toteutetaan saman henkilön toimesta (ChatGPT-moniroolinen kehitysmalli).
+
+---
+
+## Roolien välinen yhteistyö
+
+- **Team Lead** vastaa kokonaisuuden hallinnasta ja sprinttien koordinoinnista.  
+- **Research Lead** ja **Protocol Owner** tekevät yhteistyötä mittausprotokollan ja tutkimuksellisten vaatimusten osalta.  
+- **Data Engineer** ja **ML Engineer** muodostavat tekoälyketjun datan käsittelystä mallin validointiin.  
+- **Hardware Lead** ja **Tech Lead** varmistavat MoveSense-anturin toimivuuden ja datan luotettavuuden.  
+- **QA & Validation Engineer** seuraa mittausten laatua ja dokumentoi tulokset.  
+- **Presentation Lead** huolehtii viestinnästä, esityksistä ja raportoinnista ohjaajille.
+
+---
+
+# 📚 Kirjallisuushaun suunnitelma (Taustatutkimus)
+
+---
+
+## 🎯 Tutkimuskysymykset (Research questions)
+
+- **Voiko MoveSense IMU -anturi mitata polven varus/valgus-kulmia tarkkuudella ≤3° liikkeen aikana?**  
+- **Kuinka IMU-pohjainen mittaus eroaa videopohjaisesta analyysistä polven linjauksen arvioinnissa?**  
+- **Voidaanko tekoälyn avulla luokitella alaraajan liikkeet (kyykky, kävely, sivuttaisliike) MoveSense-datan perusteella?**  
+- *(valinnainen)* **Miten polven virheasennot (varus/valgus) liittyvät nivelrikon kehittymiseen?**  
+  (Brouwer 2007, Sharma 2010)
+
+💬 *Huomio:* Nämä kysymykset ovat melko erilaisia — kaksi ensimmäistä liittyvät mittaukseen, kolmas tekoälyyn ja neljäs lääketieteeseen. Esityksessä voidaan käyttää ensimmäiset kolme.
+
+---
+
+## 🧭 Tietokannat (Databases)
+
+- **PubMed** – lääketieteelliset tutkimukset (esim. nivelrikko, polven biomekaniikka)  
+- **IEEE Xplore** – tekniset artikkelit (esim. IMU, sensoriteknologia)  
+- **ScienceDirect** – yleiset terveysteknologian julkaisut  
+- **Google Scholar** – laajempi haku ja viitteiden tarkistus  
+
+---
+
+## 🔍 Hakumenetelmiä (Search method examples)
+
+| Pääteema | Hakulause / esimerkkihaku | Tietokanta |
+|-----------|----------------------------|-------------|
+| **IMU-tarkkuus polvessa** | "varus valgus knee IMU accuracy" | PubMed, IEEE Xplore |
+| **MoveSense-validointi** | "MoveSense IMU knee angle validation" | ScienceDirect |
+| **Vertailu videomittaukseen** | "IMU vs video knee joint angle error" | IEEE Xplore, Scholar |
+| **Polven linjaus ja nivelrikko** | "knee alignment osteoarthritis varus study Brouwer 2007" | PubMed |
+| **Tekoäly liikkeentunnistuksessa** | "AI motion classification IMU knee" | ScienceDirect, Scholar |
+
+---
+
+## 👥 Vastuuhenkilöt (Responsibilities)
+
+| Tehtävä | Henkilö |
+|----------|----------|
+| IMU-tarkkuus ja validointi | **Research Lead** |
+| Tekoäly ja liikkeiden luokittelu | **AI / Data Specialist** |
+| Polven linjauksen lääketieteellinen tausta |  **Medical Research Advisor** |
+
+---
+
+📄 *Tätä tiedostoa voi myöhemmin täydentää uusilla hakusanoilla, lähteillä tai tutkimuskysymyksillä.*
+
+# 📚 Kirjallisuushaku ja alustava valinta
+
+---
+
+## 🔍 Hakusanat, joita käytettiin
+
+- “varus valgus knee IMU accuracy”  
+- “inertial measurement unit knee joint kinematics validation”  
+- “MoveSense IMU knee angle”  
+- “AI motion classification IMU knee”  
+- “knee alignment osteoarthritis varus study Brouwer 2007”  
+- “wearable IMU gait analysis knee flexion”  
+
+---
+
+## 🧠 Valitut artikkelit ja tiivistelmät (5 tärkeintä)
+
+| № | Lähde ja linkki | Tavoite | Menetelmät | Keskeinen tulos |
+|---|------------------|----------|--------------|------------------|
+| **1** | Brouwer et al., 2007 — *Association between valgus and varus alignment and the development and progression of osteoarthritis of the knee* ([PubMed](https://pubmed.ncbi.nlm.nih.gov/17393449/)) | Tutkia, miten polven varus- ja valgusasento vaikuttavat nivelrikon kehittymiseen ja etenemiseen. | Pitkittäistutkimus (6 v), n = 1501, röntgenkuvat. | Varusasento → kaksinkertainen riski nivelrikon kehittymiseen, kolminkertainen etenemiseen. Tuo kliinisen perustan projektin tärkeydelle. |
+| **2** | *Knee Angle Estimation with Dynamic Calibration Using Inertial Sensors*, Sensors 2024 ([MDPI](https://www.mdpi.com/1424-8220/24/2/695?utm_source=chatgpt.com)) | Arvioida IMU-antureiden tarkkuus polven kulman mittauksessa dynaamisessa liikkeessä. | Kahden IMU:n (ylä- ja alareisi) mittaus + videoreferenssi. | Keskimääräinen virhe ≈ 3°, korrelaatio > 0.95 videomenetelmään. Tulokset osoittavat, että IMU-mittaus sopii polvikulman seurantaan. |
+| **3** | *Validation of Inertial-Measurement-Unit-Based Ex Vivo Knee Joint Angle Estimation*, Sensors 2024 ([MDPI](https://www.mdpi.com/1424-8220/24/11/3324?utm_source=chatgpt.com)) | Validointi IMU-menetelmälle kuormitetussa olosuhteessa. | Ex vivo testaus laboratoriossa, antureiden vertailu referenssijärjestelmään. | Virhe vain 0.9° ± 0.4° abduktio/adduktio-suunnassa → erittäin tarkka järjestelmä. |
+| **4** | Jordan et al., 2021 — *Validity of an Inertial Measurement Unit System to Assess Lower-Limb Kinematics*, CEJSSM ([Research Edinburgh](https://www.pure.ed.ac.uk/ws/portalfiles/portal/216369254/JordanEtal2021CEJSSMValidityOfAnInertialMeasurementUnit.pdf)) | Tarkistaa IMU-järjestelmän validiteetin liikkeen aikana. | IMU vs optinen mittaus urheilusuorituksissa. | Hyvä yhteys (r ≥ 0.7), virhe 3.6–4.3°. Soveltuu kenttäolosuhteisiin. |
+| **5** | *IMU-Based Fitness Activity Recognition Using CNNs for Time Series Classification*, Sensors 2024  ([MDPI](https://www.mdpi.com/1424-8220/24/3/742?utm_source=chatgpt.com)) | Tutkia 1D-CNN-mallien soveltuvuutta fitness-aktiviteettien luokitteluun IMU-aikasarjadatasta. | IMU-datan käyttö eri liiketyyppien tunnistamiseen 1D-CNN-malleilla. | CNN-pohjaiset mallit pystyvät luokittelemaan liikkeitä luotettavasti, myös yksianturiratkaisuilla. Soveltuu pienimuotoiseen aktiviteettien tunnistukseen.
+
+---
+
+📄 *Tätä osiota voi täydentää lisäämällä linkit DOI-numeroihin, tutkimusten päähuomiot tai uudet artikkelit myöhemmiltä päiviltä.*
+
+
 # 🧭 Taustatutkimus v0.9 – AI Motion Analyzer
 
 ## 1. Johdanto
@@ -73,16 +194,17 @@ Näin voidaan tukea kuntoutusta, urheilusuoritusten analyysiä ja nivelrikon var
 
 ## 5. Lähteet
 
-1. Brouwer G.M. et al. *Association between valgus and varus alignment and the development and progression of osteoarthritis of the knee.* Arthritis & Rheumatism, 56(4), 1204–1211, [2007](https://pubmed.ncbi.nlm.nih.gov)  
-2. Jordan M.J. et al. *Validity of an Inertial Measurement Unit System to Assess Lower-Limb Kinematics.* CEJSSM, [2021](https://www.mdpi.com)  
-3. *Knee Angle Estimation with Dynamic Calibration Using Inertial Sensors.* Sensors, [2024](https://www.mdpi.com)  
-4. *Validation of Inertial-Measurement-Unit-Based Ex Vivo Knee Joint Angle Estimation.* Sensors, [2024](https://www.research.ed.ac.uk)  
+1. Brouwer G.M. et al. *Association between valgus and varus alignment and the development and progression of osteoarthritis of the knee.* Arthritis & Rheumatism, 56(4), 1204–1211, [2007](https://pubmed.ncbi.nlm.nih.gov/17393449/)  
+2. Jordan M.J. et al. *Validity of an Inertial Measurement Unit System to Assess Lower-Limb Kinematics.* CEJSSM, [2021](https://www.pure.ed.ac.uk/ws/portalfiles/portal/216369254/JordanEtal2021CEJSSMValidityOfAnInertialMeasurementUnit.pdf)  
+3. *Knee Angle Estimation with Dynamic Calibration Using Inertial Sensors.* Sensors, [2024](https://www.mdpi.com/1424-8220/24/2/695?utm_source=chatgpt.com)  
+4. *Validation of Inertial-Measurement-Unit-Based Ex Vivo Knee Joint Angle Estimation.* Sensors, [2024](https://www.mdpi.com/1424-8220/24/11/3324?utm_source=chatgpt.com)  
 5. *IMU-Based Fitness Activity Recognition Using CNNs for Time Series Classification.* Sensors, [2024](https://www.mdpi.com/1424-8220/24/3/742?utm_source=chatgpt.com)
 
 ---
 
 
 > (päivitetty versio ohjaajan tapaamisen jälkeen)
+
 
 # 🗒️ Tapaamispöytäkirja v0.1 – AI Motion Analyzer
 
@@ -220,6 +342,8 @@ Se on vakaa suhteessa polviniveleen ja soveltuu hyvin pilot-vaiheeseen.
 
 ---
 
+
+
 ## 5. Tarkkuusvaatimukset
 
 | **Mittaus**            | **Tavoitetarkkuus** | **Hyväksyttävä raja** | **Lähde**                          |
@@ -237,7 +361,7 @@ Anturi sijoitetaan säären yläosaan, näytteenottotaajuus on 100–200 Hz ja t
 Järjestelmä on kannettava, edullinen ja kliinisesti riittävän tarkka ratkaisu polven linjauksen ja liikkeen analyysiin.
 
 
-# 📊 Mittausprotokolla v0.9 – AI Motion Analyzer
+# 📊 Mittausprotokolla v1.0 – AI Motion Analyzer
 
 ## 1. Tavoite
 
@@ -264,13 +388,15 @@ Dataa käytetään tekoälymallin (CNN) koulutukseen ja validointiin sekä polvi
 
 - **Toistot**: 5–10 kyykkyä rauhallisesti  
 - **Ohje**: Selkä suorana, kyykky n. 90°  
-- **Tallennus**: alkaa "Valmis"-komennosta, päättyy 2 s viiveellä  
+- **Tallennus**: alkaa "Valmis"-komennosta, päättyy automaattisesti 30 sekunnin jälkeen.  
 - **Tavoite**: mitata fleksio/ekstensio ja varus/valgus kuormituksen aikana
 ### 3.2 Kävelytesti
 
 - **Toistot**: 3–5 edestakaista (5–10 m)  
-- **Tallennus**: alkaa ensimmäisestä askeleesta, päättyy viimeiseen  
+- **Tallennus**: alkaa ensimmäisestä askeleesta, päättyy automaattisesti 30 sekunnin jälkeen.
 - **Tavoite**: tunnistaa liikkeen tyyppi ja polvikulman muutos dynaamisessa liikkeessä
+
+>Näytteenottotaajuus 100 Hz, datankeruu jatkuvana BLE-yhteyden kautta.
 
 ---
 
@@ -294,10 +420,11 @@ Dataa käytetään tekoälymallin (CNN) koulutukseen ja validointiin sekä polvi
 | **Kvaternionit** | rotaatioasento              | q0–q3                        |
 | **Kiihtyvyys**   | lineaarinen kiihtyvyys      | ax, ay, az (m/s²)            |
 | **Gyroskooppi**  | kulmanopeudet               | gx, gy, gz (°/s)             |
+| **Magneettikenttä** | suunnan vakautus ja kalibrointi | mx, my, mz (µT)  
 | **Aikaleima**    | reaaliaikainen t (ms)       | automaattinen BLE-yhteys    |
 
 📁 **Tallennusmuoto**: CSV  
-📈 **Näytteenottotaajuus**: 100 Hz
+📈 **Näytteenottotaajuus**: 104 Hz
 
 ---
 
@@ -313,3 +440,37 @@ Dataa käytetään tekoälymallin (CNN) koulutukseen ja validointiin sekä polvi
 
 Mittausprotokolla varmistaa toistettavat ja turvalliset mittaukset yhdellä MoveSense-anturilla.  
 Kerätty IMU-data toimii pohjana CNN-mallin kehittämiselle ja kulmatarkkuuden validoinnille.
+
+>Mittausprotokollaa päivitettiin vastaamaan todellisia mittausparametreja (100 Hz, 30 s, 10 datariviä per näyte).
+>Tämä versio toimii pohjana datankeruun ja suodatuksen toteutukselle Sprintti 2:n aikana.
+
+
+
+
+# 📋 Suunniteltu käyttö ja käyttäjäprofiilit (v0.1)
+
+| Käyttäjä | Käyttökonteksti | Tehtävä | Käyttötiheys | Toiminnalliset vaatimukset | Ei-toiminnalliset vaatimukset | Rajoitukset |
+|-----------|-----------------|----------|---------------|-----------------------------|-------------------------------|--------------|
+| **Urheilija (nuori, 18–30 v)** | Kuntosali tai urheiluhalli | Kyykky- ja askelharjoitusten analysointi ja palautteen saanti | Päivittäin tai useita kertoja viikossa | Järjestelmä tunnistaa liikkeen (kyykky, askel, sivuttaisliike) ja antaa palautteen heti | Tarkkuus ±3°, vasteaika < 1 s | Anturin kiinnitys polveen, ei saa liikkua harjoituksen aikana; ei vedenkestävä |
+| **Kuntoutuja (leikkauksen jälkeen)** | Koti / fysioterapian vastaanotto | Polven koukistusliikkeiden seuranta ja edistymisen arviointi | 3–5 kertaa viikossa | Näyttää liikkeen kulman ja kehityksen ajan myötä, antaa suosituksia liikkeen toistosta | Tarkkuus ±2°, vasteaika < 2 s | Anturin oltava mukava pitkässä käytössä; vaatetus ei saa estää liikettä |
+| **Ikääntynyt käyttäjä (65+)** | Kotiympäristö | Kävelyn linjauksen seuranta ja mahdollisten poikkeamien tunnistus | 1–2 kertaa viikossa | Tunnistaa epävakaat liikkeet tai poikkeamat polven linjauksessa | Tarkkuus ±4°, yksinkertainen käyttöliittymä | Ei liikaa painoa anturissa; käyttö helppoa ilman ohjausta |
+
+
+# 📁 MoveSense IMU Data Structure
+
+**File format:** CSV  
+**Sampling rate:** 100 Hz  
+**Recording length:** 30 s  
+**Data columns:**
+
+| Column | Description | Unit |
+|---------|--------------|------|
+| Timestamp | Milliseconds since start | ms |
+| AccX, AccY, AccZ | Linear acceleration | m/s² |
+| GyroX, GyroY, GyroZ | Angular velocity | °/s |
+| MagnX, MagnY, MagnZ | Magnetic field strength | µT |
+
+**Notes:**  
+- Data is recorded via BLE in real time.  
+- Sensor orientation: arrow forward, Y-axis upward.  
+- Typical file size for 30 s @ 100 Hz ≈ 200 kB.

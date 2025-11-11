@@ -41,6 +41,8 @@ Se on vakaa suhteessa polviniveleen ja soveltuu hyvin pilot-vaiheeseen.
 
 ---
 
+
+
 ## 5. Tarkkuusvaatimukset
 
 | **Mittaus**            | **Tavoitetarkkuus** | **Hyväksyttävä raja** | **Lähde**                          |

@@ -1,4 +1,4 @@
-# 📊 Mittausprotokolla v0.9 – AI Motion Analyzer
+# 📊 Mittausprotokolla v1.0 – AI Motion Analyzer
 
 ## 1. Tavoite
 
@@ -25,13 +25,15 @@ Dataa käytetään tekoälymallin (CNN) koulutukseen ja validointiin sekä polvi
 
 - **Toistot**: 5–10 kyykkyä rauhallisesti  
 - **Ohje**: Selkä suorana, kyykky n. 90°  
-- **Tallennus**: alkaa "Valmis"-komennosta, päättyy 2 s viiveellä  
+- **Tallennus**: alkaa "Valmis"-komennosta, päättyy automaattisesti 30 sekunnin jälkeen.  
 - **Tavoite**: mitata fleksio/ekstensio ja varus/valgus kuormituksen aikana
 ### 3.2 Kävelytesti
 
 - **Toistot**: 3–5 edestakaista (5–10 m)  
-- **Tallennus**: alkaa ensimmäisestä askeleesta, päättyy viimeiseen  
+- **Tallennus**: alkaa ensimmäisestä askeleesta, päättyy automaattisesti 30 sekunnin jälkeen.
 - **Tavoite**: tunnistaa liikkeen tyyppi ja polvikulman muutos dynaamisessa liikkeessä
+
+>Näytteenottotaajuus 100 Hz, datankeruu jatkuvana BLE-yhteyden kautta.
 
 ---
 
@@ -55,10 +57,11 @@ Dataa käytetään tekoälymallin (CNN) koulutukseen ja validointiin sekä polvi
 | **Kvaternionit** | rotaatioasento              | q0–q3                        |
 | **Kiihtyvyys**   | lineaarinen kiihtyvyys      | ax, ay, az (m/s²)            |
 | **Gyroskooppi**  | kulmanopeudet               | gx, gy, gz (°/s)             |
+| **Magneettikenttä** | suunnan vakautus ja kalibrointi | mx, my, mz (µT)  
 | **Aikaleima**    | reaaliaikainen t (ms)       | automaattinen BLE-yhteys    |
 
 📁 **Tallennusmuoto**: CSV  
-📈 **Näytteenottotaajuus**: 100 Hz
+📈 **Näytteenottotaajuus**: 104 Hz
 
 ---
 
@@ -74,3 +77,6 @@ Dataa käytetään tekoälymallin (CNN) koulutukseen ja validointiin sekä polvi
 
 Mittausprotokolla varmistaa toistettavat ja turvalliset mittaukset yhdellä MoveSense-anturilla.  
 Kerätty IMU-data toimii pohjana CNN-mallin kehittämiselle ja kulmatarkkuuden validoinnille.
+
+>Mittausprotokollaa päivitettiin vastaamaan todellisia mittausparametreja (100 Hz, 30 s, 10 datariviä per näyte).
+>Tämä versio toimii pohjana datankeruun ja suodatuksen toteutukselle Sprintti 2:n aikana.
