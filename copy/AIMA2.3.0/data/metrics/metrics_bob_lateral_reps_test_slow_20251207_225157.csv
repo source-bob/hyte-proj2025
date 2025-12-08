@@ -1,0 +1,14 @@
+session_id,rep_id,peak_index,t_peak_sec,max_angle_deg,rep_start_idx,rep_end_idx,duration_sec
+bob_lateral_reps_test_slow_20251207_225157,1,161,1.548,2.69,0,236,2.269
+bob_lateral_reps_test_slow_20251207_225157,2,311,2.99,1.47,236,464,2.192
+bob_lateral_reps_test_slow_20251207_225157,3,617,5.933,0.9,464,696,2.231
+bob_lateral_reps_test_slow_20251207_225157,4,775,7.452,0.79,696,912,2.077
+bob_lateral_reps_test_slow_20251207_225157,5,1049,10.087,0.81,912,1319,3.913
+bob_lateral_reps_test_slow_20251207_225157,6,1589,15.279,1.1,1319,1808,4.702
+bob_lateral_reps_test_slow_20251207_225157,7,2028,19.5,0.95,1808,2144,3.231
+bob_lateral_reps_test_slow_20251207_225157,8,2260,21.731,0.67,2144,2410,2.558
+bob_lateral_reps_test_slow_20251207_225157,9,2560,24.615,0.88,2410,2643,2.24
+bob_lateral_reps_test_slow_20251207_225157,10,2727,26.221,0.44,2643,2875,2.231
+bob_lateral_reps_test_slow_20251207_225157,11,3023,29.067,0.66,2875,3121,2.365
+bob_lateral_reps_test_slow_20251207_225157,12,3220,30.962,0.73,3121,3370,2.394
+bob_lateral_reps_test_slow_20251207_225157,13,3520,33.846,1.99,3370,3639,2.587

@@ -1,0 +1,2 @@
+session_id,n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+bob_walk_reps_final_test_20251208_003231,28.0,3.89,1.0196428571428573,0.7461639141198761,1.2496071428571427,0.3263255757331181,48.0,-20.551551321703776,131.28530830465718,-176.54639516046396,182.33144812603308,132.88415420349224,2.750581276492527,22.46439291864613

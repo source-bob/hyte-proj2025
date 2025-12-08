@@ -1,0 +1,2 @@
+session_id,n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+H2_squat_normal_20251205_014834,29.0,28.74,19.38758620689655,5.875682589941426,1.2065517241379309,0.30179104282849434,49.714285714285715,14.919987817194563,7.382398928224172,0.607061859013508,25.969047370478197,16.646496640455,2.809783796997595,20.971223821780395

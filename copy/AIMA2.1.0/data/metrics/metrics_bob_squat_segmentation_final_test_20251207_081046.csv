@@ -1,0 +1,7 @@
+session_id,rep_id,peak_index,t_peak_sec,max_angle_deg,rep_start_idx,rep_end_idx,duration_sec
+bob_squat_segmentation_final_test_20251207_081046,1,13,0.125,20.2,0,379,3.644
+bob_squat_segmentation_final_test_20251207_081046,2,746,7.173,26.21,379,779,3.846
+bob_squat_segmentation_final_test_20251207_081046,3,813,7.817,24.39,779,876,0.933
+bob_squat_segmentation_final_test_20251207_081046,4,940,9.038,22.25,876,1083,1.99
+bob_squat_segmentation_final_test_20251207_081046,5,1227,11.798,14.36,1083,1283,1.923
+bob_squat_segmentation_final_test_20251207_081046,6,1339,12.875,6.2,1283,3639,22.654

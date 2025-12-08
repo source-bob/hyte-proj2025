@@ -1,0 +1,4 @@
+rep_id,peak_index,t_peak_sec,max_angle_deg,rep_start_idx,rep_end_idx,duration_sec
+1,1113,10.702,27.07,0,1399,13.452
+2,1685,16.202,18.38,1399,2434,9.952
+3,3184,30.615,9.06,2434,3643,11.625

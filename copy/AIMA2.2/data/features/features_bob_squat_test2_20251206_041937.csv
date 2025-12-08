@@ -1,0 +1,2 @@
+session_id,n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+bob_squat_test2_20251206_041937,26.0,82.65,65.11076923076924,22.884793729104675,1.3458076923076923,0.45832773118326325,44.57142857142857,56.5759852890025,40.25599790391566,0.10971674301723826,115.92345122138836,69.4362115805686,4.56739504975195,109.98332244317923

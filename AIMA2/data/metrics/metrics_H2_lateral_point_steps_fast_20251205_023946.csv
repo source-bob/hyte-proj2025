@@ -1,0 +1,14 @@
+session_id,rep_id,peak_index,t_peak_sec,max_angle_deg,rep_start_idx,rep_end_idx,duration_sec
+H2_lateral_point_steps_fast_20251205_023946,1,99,0.952,4.77,0,163,1.567
+H2_lateral_point_steps_fast_20251205_023946,2,228,2.192,8.0,163,292,1.24
+H2_lateral_point_steps_fast_20251205_023946,3,357,3.433,9.63,292,427,1.298
+H2_lateral_point_steps_fast_20251205_023946,4,498,4.788,11.63,427,717,2.788
+H2_lateral_point_steps_fast_20251205_023946,5,936,9.0,12.15,717,1089,3.577
+H2_lateral_point_steps_fast_20251205_023946,6,1242,11.942,11.06,1089,1320,2.221
+H2_lateral_point_steps_fast_20251205_023946,7,1399,13.452,10.9,1320,1597,2.663
+H2_lateral_point_steps_fast_20251205_023946,8,1795,17.26,10.13,1597,2018,4.048
+H2_lateral_point_steps_fast_20251205_023946,9,2242,21.558,8.35,2018,2665,6.221
+H2_lateral_point_steps_fast_20251205_023946,10,3088,29.692,6.13,2665,3159,4.75
+H2_lateral_point_steps_fast_20251205_023946,11,3230,31.058,4.48,3159,3297,1.327
+H2_lateral_point_steps_fast_20251205_023946,12,3364,32.346,5.47,3297,3442,1.394
+H2_lateral_point_steps_fast_20251205_023946,13,3521,33.856,5.89,3442,3639,1.894

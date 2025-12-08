@@ -1,0 +1,2 @@
+session_id,n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+H1_lateral_right_left_20251205_020801,30.0,8.61,5.060999999999999,2.399743527962936,1.1662666666666666,0.3019933700523168,51.42857142857142,24.882179919572057,15.504415229838093,-5.188540746543954,43.059627219944254,29.31739703945748,2.1768548416249676,29.852533869295364

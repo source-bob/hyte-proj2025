@@ -1,0 +1,4 @@
+session_id,rep_id,peak_index,t_peak_sec,max_angle_deg,rep_start_idx,rep_end_idx,duration_sec
+H2_squat_deep_20251205_020157,1,1882,18.096,33.55,0,1997,19.202
+H2_squat_deep_20251205_020157,2,2112,20.308,26.62,1997,2239,2.327
+H2_squat_deep_20251205_020157,3,2367,22.76,23.09,2239,3639,13.462

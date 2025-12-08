@@ -1,0 +1,2 @@
+n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+16.0,63.84,58.650625000000005,5.598454550978778,20.16525,9.06615630035684,30.017823082455205,-7.2518295221265845,21.17044631779994,-69.26716294253508,51.482797834505476,22.378043451401997,32.77072786338457,170.11109508782127

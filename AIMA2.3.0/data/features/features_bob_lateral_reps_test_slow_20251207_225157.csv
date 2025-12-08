@@ -1,0 +1,2 @@
+session_id,n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+bob_lateral_reps_test_slow_20251207_225157,13.0,2.69,1.083076923076923,0.6009912915711664,2.691538461538462,0.7586766429255022,22.285714285714285,-86.8291378678782,66.58769011330526,-174.52399869128791,184.45286793473784,109.42220824633621,1.7126137833558746,18.677296236700553

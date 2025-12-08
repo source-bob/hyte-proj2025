@@ -1,0 +1,2 @@
+session_id,n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+LAST_FCKNG_TEST_NORMAL_20251207_070309,6.0,19.29,10.798333333333334,6.332167655883901,5.831833333333333,5.09660087433009,10.285714285714286,36.43865496922775,14.289079132173669,0.5953471012383994,57.42597167026716,39.140175758572504,2.4828853903503227,20.068526288698344

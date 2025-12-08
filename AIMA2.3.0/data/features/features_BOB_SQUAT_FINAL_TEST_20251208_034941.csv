@@ -1,0 +1,2 @@
+session_id,n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+BOB_SQUAT_FINAL_TEST_20251208_034941,15.0,26.59,17.759333333333334,8.15410446067228,2.332666666666667,0.4500547621000014,25.71428571428571,21.6125,9.999403419704597,6.92,34.62,23.813614278391256,2.883916977363983,31.10878426999776

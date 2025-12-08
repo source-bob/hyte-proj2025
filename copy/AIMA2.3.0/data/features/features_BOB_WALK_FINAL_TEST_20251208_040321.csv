@@ -1,0 +1,2 @@
+session_id,n_reps,flex_max_deg,flex_mean_deg,flex_std_deg,rep_duration_mean,rep_duration_std,tempo_reps_per_min,valgus_mean_deg,valgus_std_deg,valgus_min_deg,valgus_max_deg,valgus_rms_deg,flex_vel_rms,flex_jerk_rms
+BOB_WALK_FINAL_TEST_20251208_040321,28.0,26.24,14.599999999999998,8.73220721565532,1.2496428571428573,0.32706303611358584,48.0,17.58,9.767147314680305,3.04,32.64,20.111030969760517,3.111901044494462,24.50751678252331

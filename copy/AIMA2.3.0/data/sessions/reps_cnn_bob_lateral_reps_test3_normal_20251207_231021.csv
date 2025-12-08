@@ -1,0 +1,2 @@
+session_id,rep_id,pred_class,prob_squat,prob_walk,prob_lateral
+bob_lateral_reps_test3_normal_20251207_231021,1,lateral,0.2313796728849411,0.12076403945684433,0.6478562951087952

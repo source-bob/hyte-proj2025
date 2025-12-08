@@ -1,0 +1,14 @@
+session_id,rep_id,peak_index,t_peak_sec,max_angle_deg,rep_start_idx,rep_end_idx,duration_sec
+bob_squat_segmentation_test9_20251206_104823,1,112,1.077,14.47,0,198,1.904
+bob_squat_segmentation_test9_20251206_104823,2,284,2.731,30.39,198,392,1.865
+bob_squat_segmentation_test9_20251206_104823,3,501,4.817,46.06,392,588,1.885
+bob_squat_segmentation_test9_20251206_104823,4,675,6.49,61.44,588,792,1.962
+bob_squat_segmentation_test9_20251206_104823,5,909,8.74,75.19,792,988,1.885
+bob_squat_segmentation_test9_20251206_104823,6,1067,10.26,89.95,988,1289,2.894
+bob_squat_segmentation_test9_20251206_104823,7,1511,14.529,94.64,1289,1635,3.327
+bob_squat_segmentation_test9_20251206_104823,8,1760,16.923,94.58,1635,1981,3.327
+bob_squat_segmentation_test9_20251206_104823,9,2202,21.173,90.79,1981,2495,4.942
+bob_squat_segmentation_test9_20251206_104823,10,2788,26.808,83.31,2495,2927,4.154
+bob_squat_segmentation_test9_20251206_104823,11,3067,29.49,78.26,2927,3151,2.154
+bob_squat_segmentation_test9_20251206_104823,12,3236,31.115,76.14,3151,3387,2.269
+bob_squat_segmentation_test9_20251206_104823,13,3539,34.029,74.42,3387,3639,2.423
